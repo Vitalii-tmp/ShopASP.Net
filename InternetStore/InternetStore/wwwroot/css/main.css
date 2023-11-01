@@ -20,7 +20,7 @@
  }
 
 body{
-   min-width: 320px;
+   min-width: 360px;
    background-color: var(--bg-color);
    color: var(--text-color);
 }
@@ -46,9 +46,11 @@ color: var(--accent-color);
    flex: 1 1 auto;
  }
 
-  /* GENERAL RULES */
+/* GENERAL RULES */
 
-   /* HEADER */
+
+
+/* HEADER */
 
 .header-top{
    padding-top: 8px;
@@ -56,7 +58,8 @@ color: var(--accent-color);
 }
 
 .languages a,
-.header-phone{
+.header-phone,
+.header-mail{
    font-size: 14px;
    font-weight: 600;
 }
@@ -122,6 +125,11 @@ color: var(--accent-color);
    border-radius: 50%;
 }
 
+.header-contacts-icons{
+   position: relative;
+   margin-right: 3px;
+   font-size: 13px;
+}
 
 
 /* HEADER */
@@ -137,5 +145,9 @@ color: var(--accent-color);
       .header nav {
          padding-top: 10px;
          padding-bottom: 10px;
+      }
+
+      .header-top-icons{
+         font-size: 0;
       }
    }

@@ -7,7 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Home\css\" />
+    <Compile Remove="Views\Home\css\**" />
+    <Content Remove="Views\Home\css\**" />
+    <EmbeddedResource Remove="Views\Home\css\**" />
+    <None Remove="Views\Home\css\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\css\" />
   </ItemGroup>
 

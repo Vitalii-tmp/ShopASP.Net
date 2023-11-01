@@ -1,0 +1,141 @@
+
+ 
+ /* GENERAL RULES */
+ 
+ :root{
+    --bg-color: #181818;
+    --text-color:#d7d7d7;
+    --accent-color: #da2d2e;
+    --accent_light-color: #f5f5f5;  
+ }
+
+ html, body {
+   height: 100%;
+ }
+
+ .wrapper {
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+ }
+
+body{
+   min-width: 320px;
+   background-color: var(--bg-color);
+   color: var(--text-color);
+}
+
+img{
+   max-width: 100%;
+   height: auto;
+}
+
+a{
+   color: var(--text-color);
+   text-decoration: none;
+   transition: color .3s;
+}
+
+a:hover,
+a.active{
+color: var(--accent-color);
+}
+
+
+.main{
+   flex: 1 1 auto;
+ }
+
+  /* GENERAL RULES */
+
+   /* HEADER */
+
+.header-top{
+   padding-top: 8px;
+   padding-bottom: 8px;
+}
+
+.languages a,
+.header-phone{
+   font-size: 14px;
+   font-weight: 600;
+}
+
+.header nav{
+   padding-top: 15px;
+   padding-bottom: 15px;
+
+   border-top: 1px solid #000000;
+   border-bottom: 1px solid #232323;
+   background-color: var(--bg-color) !important;
+
+   position: relative;
+}
+
+.navbar-brand{
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.navbar-brand img{
+   max-width: 58px;
+}
+
+
+.header .navbar-nav .nav-link{
+   text-transform: uppercase;
+   color: var(--text-color);
+   padding-left: 17px;
+   padding-right: 17px;
+}
+
+.header .navbar-nav .nav-link:hover,
+.header .navbar-nav .nav-link.active{
+   color: var(--accent-color);
+}
+
+.home-link{
+   padding-left: 0px;
+}
+
+.header-icons{
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   font-size: 25px;
+}
+
+.header-icons li {
+   display: inline-block;
+}
+
+.header-icons li:not(:first-child) {
+  margin-left: 20px;
+}
+
+.header-icons li span>span {
+   position: absolute;
+   width: 6px;
+   height: 6px;
+   background-color: var(--accent-color);
+   border-radius: 50%;
+}
+
+
+
+/* HEADER */
+
+
+   @media (min-width: 992px){
+      .header .navbar-nav .nav-item:first-child a {
+         padding-left: 0;
+      }
+   }
+
+   @media (max-width: 768px){
+      .header nav {
+         padding-top: 10px;
+         padding-bottom: 10px;
+      }
+   }

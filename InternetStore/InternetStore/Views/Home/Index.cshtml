@@ -1,136 +1,203 @@
-﻿@* @{
+﻿@{
     ViewData["Title"] = "Home Page";
 }
 
-<!doctype html>
-<html lang="en">
-<head>
-    
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>@ViewData["Title"] - InternetStore::Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-   
-    <link rel="stylesheet" href="~/lib/uicons-regular-rounded/css/uicons-regular-rounded.css">
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/InternetStore.styles.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/main.css">
-    
-</head>
-<body>
+<main class="main">
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-section-content">
+                <h1>Our servise best choice</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit consectetur convallis.</p>
 
-    <div class="wrapper">
-        <div class="header">
-            <div class="container">
-                <div class="header-top d-flex justify-content-between">
-                    <ul class="languages list-inline m-0">
-                        <li class="list-inline-item"><a href="#">UA</a></li>
-                        <li class="list-inline-item"><a href="#" class="active">EN</a></li>
-                    </ul>
-
-                    <a href="tel:+380987085539" class="header-phone">+380987085539</a>
-                </div>
+                <a href="#" class="btn btn-warning">Buy now</a>
+                <a href="#" class="btn btn-outline-secondary">Read more</a>
             </div>
-
-            <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-                <div class="container">
-                    <a class="navbar-brand" href="#">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav me-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="">Home</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Store
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-menu-dark">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Contacts</a>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                    
-
-                    <div id="nav-icons"></div>
-                    
-
-
-                </div>
-            </nav>
-
-            <ul class="header-icons d-none" >
-                <li><a href="#"><span class="fi fi-rr-user"></span></a></li>
-                <li><a href="#"><span class="fi fi-rr-heart"></span></a></li>
-                <li>
-                    <a href="#offcanvasCart" data-bs-toggle="offcanvas">
-                        <span class="fi fi-rr-shopping-cart"></span><span></span>
-                    </a>
-                </li>
-            </ul>
-
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasExampleLabel" data-bs-theme="dark">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <div>
-                        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-                    </div>
-                    <div class="dropdown mt-3">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                            Dropdown button
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-
         </div>
+    </section>
 
-        <main class="main">
-            MAIN
-        </main>
+    <section class="banner-section">
+        <div class="container">
+            <div class="banner-section-inner">
+                <div class="banner-section-img">
+                    <img src="/img/banner.jpg" alt="">
+                </div>
 
-        <footer class="footer">
-            Footer
-        </footer>
+                <div class="banner-section-content">
+                    <h3>Car shop</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sales-section">
+        <div class="container">
+            <h3 class="h-title">Sales</h3>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card">
+                        <div class="product-card-img">
+                            <img src="/img/BBS-XR.png" alt="">
+                        </div>
+                        <div class="product-card-content">
+                            <h3><a href="#">BBC-XR</a></h3>
+                            <div class="product-card-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <span>$199.99</span>
+                                </div>
+                                <div class="product-actions">
+                                    <a href="#" class="add2fav"><span class="fi fi-rr-heart"></span></a>
+                                    <a href="#" class="add2cart"><span class="fi fi-rr-shopping-cart"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card">
+                        <div class="product-card-img">
+                            <img src="/img/BBS-CH-R-II.png" alt="">
+                        </div>
+                        <div class="product-card-content">
+                            <h3><a href="#">BBS-CH-R-II</a></h3>
+                            <div class="product-card-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <span>$99.99</span>
+                                    <small>$199.99</small>
+                                </div>
+                                <div class="product-actions">
+                                    <a href="#" class="add2fav"><span class="fi fi-rr-heart"></span></a>
+                                    <a href="#" class="add2cart"><span class="fi fi-rr-shopping-cart"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card">
+                        <div class="product-card-img">
+                            <img src="/img/BBS-CH-R-II.png" alt="">
+                        </div>
+                        <div class="product-card-content">
+                            <h3><a href="#">BBS-CH-R</a></h3>
+                            <div class="product-card-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <span>$99.99</span>
+                                    <small>$199.99</small>
+                                </div>
+                                <div class="product-actions">
+                                    <a href="#" class="add2fav"><span class="fi fi-rr-heart"></span></a>
+                                    <a href="#" class="add2cart"><span class="fi fi-rr-shopping-cart"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card">
+                        <div class="product-card-img">
+                            <img src="img/BBS-LM.png" alt="">
+                        </div>
+                        <div class="product-card-content">
+                            <h3><a href="#">BBS-LM</a></h3>
+                            <div class="product-card-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <span>$99.99</span>
+                                    <small>$199.99</small>
+                                </div>
+                                <div class="product-actions">
+                                    <a href="#" class="add2fav"><span class="fi fi-rr-heart"></span></a>
+                                    <a href="#" class="add2cart"><span class="fi fi-rr-shopping-cart"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card">
+                        <div class="product-card-img">
+                            <img src="/img/BBS-RS-Gold.png" alt="">
+                        </div>
+                        <div class="product-card-content">
+                            <h3><a href="#">BBS-RS-Gold</a></h3>
+                            <div class="product-card-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <span>$99.99</span>
+                                    <small>$199.99</small>
+                                </div>
+                                <div class="product-actions">
+                                    <a href="#" class="add2fav"><span class="fi fi-rr-heart"></span></a>
+                                    <a href="#" class="add2cart"><span class="fi fi-rr-shopping-cart"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card">
+                        <div class="product-card-img">
+                            <img src="/img/BBS-RS-Silver.png" alt="">
+                        </div>
+                        <div class="product-card-content">
+                            <h3><a href="#">BBS-RS-Silver</a></h3>
+                            <div class="product-card-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <span>$99.99</span>
+                                    <small>$199.99</small>
+                                </div>
+                                <div class="product-actions">
+                                    <a href="#" class="add2fav"><span class="fi fi-rr-heart"></span></a>
+                                    <a href="#" class="add2cart"><span class="fi fi-rr-shopping-cart"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-        
-    </div>
+    <section class="news-section">
+        <div class="container">
+            <h3 class="h-title" href="#">News</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="/img/news1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Porshe on F1</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-md-4">
+                    <div class="card">
+                        <img src="/img/news2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Porshe on F1</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-md-4">
+                    <div class="card">
+                        <img src="/img/news3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Porshe on F1</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
 
-    <script src="~/js/main.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    
-</body>
-</html>
- *@
+            </div>
+        </div>
+    </section>
+
+</main> 

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TLCsSbA70OYiwb/HC4a64CIhVhyiNjgq/Y3Pumfb/dY=",
+  "Hash": "Cyz1Ke/7+VJzMDm/cPp8OLnOBWN4tawtUA0MnCdr9K8=",
   "Source": "InternetStore",
   "BasePath": "_content/InternetStore",
   "Mode": "Default",
@@ -49,6 +49,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\img\\banner.jpg",
+      "SourceId": "InternetStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\",
+      "BasePath": "_content/InternetStore",
+      "RelativePath": "img/banner.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\banner.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\img\\car.png",
+      "SourceId": "InternetStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\",
+      "BasePath": "_content/InternetStore",
+      "RelativePath": "img/car.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\car.png"
     },
     {
       "Identity": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\img\\logo.png",

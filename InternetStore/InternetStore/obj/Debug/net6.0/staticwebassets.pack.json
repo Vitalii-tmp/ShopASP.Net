@@ -9,6 +9,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\img\\banner.jpg",
+      "PackagePath": "staticwebassets\\img\\banner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\img\\car.png",
+      "PackagePath": "staticwebassets\\img\\car.png"
+    },
+    {
       "Id": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\img\\logo.png",
       "PackagePath": "staticwebassets\\img\\logo.png"
     },

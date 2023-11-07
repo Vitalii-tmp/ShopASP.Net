@@ -25,7 +25,7 @@
 
 
                     <ul class="contacts list-inline m-0">
-                        @* <li class="list-inline-item header-top-icons">
+                        <li class="list-inline-item header-top-icons">
                             <a href="https://www.instagram.com/vital1kilchuk/" target="_blank"><i class="fi fi-brands-instagram "></i></a>
 
                         </li>
@@ -34,10 +34,10 @@
                         </li>
                         <li class="list-inline-item header-top-icons">
                             <a href="https://www.linkedin.com/in/vitalii-ilchuk-tmp/" target="_blank"><i class="fi fi-brands-linkedin "></i></a>
-                        </li> *@
+                        </li>
                         <li class="list-inline-item">
                             <i class="fi fi-rr-envelope header-contacts-icons"></i>
-                            <a href="vitaliilchuk6@gmail.com" class="header-mail">mail.support</a>
+                            <a href="mailto:vitaliilchuk6@gmail.com" class="header-mail">mail.support</a>
                         </li>
                         <li class="list-inline-item">
                             <i class="fi fi-rr-phone-call header-contacts-icons"></i>
@@ -64,7 +64,7 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav me-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="">Home</a>
+                                    <a class="nav-link active" aria-current="page" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -106,24 +106,61 @@
                 </li>
             </ul>
 
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasExampleLabel" data-bs-theme="dark">
+            <div class="offcanvas offcanvas-end minicart" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasExampleLabel" data-bs-theme="dark">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <div>
-                        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                   <div class="minicart-product-row">
+                                <img src="/img/BBS-1.png" alt="">
+                                <div class="minicart-product-info">
+                                    <p class="product-name">BBS</p>
+                                    <p class="product-variation">Silver</p>
+                                    <p class="product-qty">
+                                        <input type="number" value="1" min="1"> &times; $19.99
+                                    </p>
+                                </div>
+                                <a href="#" class="minicart-delete-product"><i class="fi fi-rr-trash"></i></a>
+                                <a href="#" class="minicart-update-product"><i class="fi fi-rr-refresh"></i></a>
                     </div>
-                    <div class="dropdown mt-3">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                            Dropdown button
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                    <div class="minicart-product-row">
+                                <img src="/img/BBS-RS-GOLD.png" alt="">
+                                <div class="minicart-product-info">
+                                    <p class="product-name">BBS_RS</p>
+                                    <p class="product-variation">Gold</p>
+                                    <p class="product-qty">
+                                        <input type="number" value="1" min="1"> &times; $19.99
+                                    </p>
+                                </div>
+                                <a href="#" class="minicart-delete-product"><i class="fi fi-rr-trash"></i></a>
+                                <a href="#" class="minicart-update-product"><i class="fi fi-rr-refresh"></i></a>
+                    </div>
+                    <div class="minicart-product-row">
+                                <img src="/img/BBS-LM.png" alt="">
+                                <div class="minicart-product-info">
+                                    <p class="product-name">BBS_LM</p>
+                                    <p class="product-variation">Silver</p>
+                                    <p class="product-qty">
+                                        <input type="number" value="1" min="1"> &times; $19.99
+                                    </p>
+                                </div>
+                                <a href="#" class="minicart-delete-product"><i class="fi fi-rr-trash"></i></a>
+                                <a href="#" class="minicart-update-product"><i class="fi fi-rr-refresh"></i></a>
+                    </div>
+
+                    <hr>
+                    
+                    <div class="minicart-total-price">
+                        <h5>Total Price: $178.98</h5>
+                        <button class="btn btn-outline-secondary">Update cart</button>
+                    </div>
+
+                    <hr>
+
+                    <div class="minicart-btn">
+                        <a href="#" class="btn btn-outline-secondary">Cart</a>
+                        <a href="#" class="btn btn-warning">Checout</a>
                     </div>
                 </div>   
             </div>

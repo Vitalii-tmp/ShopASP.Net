@@ -5,6 +5,6 @@ namespace InternetStore.Models
     public class Adress
     {
         [Key] 
-        public string? City { get; set; }
+        public string? City { get; set;  }
     }
 }

@@ -1,38 +1,64 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+@{
+    ViewData["Title"] = "Product page";
 }
-
-<main class="main">
-    <section class="hero-section">
-        <div class="container">
-            <div class="hero-section-content">
-                <h1>Our servise best choice</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit consectetur convallis.</p>
-
-                <a href="#" class="btn btn-warning">Buy now</a>
-                <a href="#" class="btn btn-outline-secondary">Read more</a>
+<main class="product-page">
+<div class="container">
+    <h1>BBS-LM</h1>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="produckt-image">
+                <img src="/img/BBS-LM.png" alt="">
             </div>
-        </div>
-    </section>
 
-    <section class="banner-section">
-        <div class="container">
-            <div class="banner-section-inner">
-                <div class="banner-section-img">
-                    <img src="/img/banner.jpg" alt="">
+        </div>
+        
+        <div class="col-md-4">
+            <div class="product-page-actions">
+
+                <div class="product-price">
+                    <span>$99.99</span>
+                    <small>$199.99</small>
                 </div>
 
-                <div class="banner-section-content">
-                    <h3>Car shop</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="product-variations">
+                    <ul>
+                        <li><a href="#" class="btn btn-outline-secondary active">Silver</a></li>
+                        <li><a href="#" class="btn btn-outline-secondary">Gold</a></li>
+
+                    </ul>
+                </div>
+
+                <a href="#" class="btn btn-warning add2cart-btn">Add to cart</a>
+            </div>
+        </div>
+
+
+
+
+    </div>
+     <div class="row">
+        <div class="col-12">
+            <div class="product-description">
+                <h3>Description</h3>
+                <div class="product-description-content">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam laoreet, leo vel condimentum pulvinar, felis nulla cursus metus, nec scelerisque diam mi molestie dolor. </li>
+                        <li>Nam hendrerit ullamcorper felis in consequat. Suspendisse potenti. Etiam elementum sapien lobortis ipsum tempor, vitae venenatis ligula rhoncus. Cras purus urna, rhoncus sed pharetra eu, maximus ac eros. Suspendisse justo lectus, elementum nec nisl ac, ultricies commodo sem.</li>
+                        <li>Vivamus ac sodales erat. Sed non turpis eu mauris pharetra tempus. Donec tristique erat turpis, et pulvinar dolor dapibus vel.</li>
+                        <li>In hac habitasse platea dictumst.</li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
 
-    <section class="sales-section">
-        <div class="container">
-            <h3 class="h-title">Sales</h3>
+
+
+
+    </div>
+
+     <section class="sales-section">
+        
+             <h3 class="h-title">Sales</h3>
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="product-card">
@@ -160,44 +186,7 @@
 
                 </div>
             </div>
-        </div>
+        
     </section>
-
-
-    <section class="news-section">
-        <div class="container">
-            <h3 class="h-title" href="#">News</h3>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="/img/news1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Porshe on F1</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-                    <div class="col-md-4">
-                    <div class="card">
-                        <img src="/img/news2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Porshe on F1</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-                    <div class="col-md-4">
-                    <div class="card">
-                        <img src="/img/news3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Porshe on F1</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-</main> 
+</div>
+</main>

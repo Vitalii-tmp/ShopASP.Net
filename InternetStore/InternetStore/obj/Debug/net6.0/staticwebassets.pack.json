@@ -9,8 +9,40 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\img\\BBS-CH-R-II.png",
+      "PackagePath": "staticwebassets\\img\\BBS-CH-R-II.png"
+    },
+    {
+      "Id": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\img\\BBS-LM.png",
+      "PackagePath": "staticwebassets\\img\\BBS-LM.png"
+    },
+    {
+      "Id": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\img\\BBS-RS-Gold.png",
+      "PackagePath": "staticwebassets\\img\\BBS-RS-Gold.png"
+    },
+    {
+      "Id": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\img\\BBS-RS-Silver.png",
+      "PackagePath": "staticwebassets\\img\\BBS-RS-Silver.png"
+    },
+    {
+      "Id": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\img\\BBS-XR.png",
+      "PackagePath": "staticwebassets\\img\\BBS-XR.png"
+    },
+    {
+      "Id": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\img\\ENKEI.jpg",
+      "PackagePath": "staticwebassets\\img\\ENKEI.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\img\\ENKEI.png",
+      "PackagePath": "staticwebassets\\img\\ENKEI.png"
+    },
+    {
       "Id": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\img\\banner.jpg",
       "PackagePath": "staticwebassets\\img\\banner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\img\\bbs1.png",
+      "PackagePath": "staticwebassets\\img\\bbs1.png"
     },
     {
       "Id": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\img\\car.png",
@@ -19,6 +51,18 @@
     {
       "Id": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\img\\logo.png",
       "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\img\\news1.jpg",
+      "PackagePath": "staticwebassets\\img\\news1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\img\\news2.jpg",
+      "PackagePath": "staticwebassets\\img\\news2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\img\\news3.jpg",
+      "PackagePath": "staticwebassets\\img\\news3.jpg"
     },
     {
       "Id": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\js\\main.js",

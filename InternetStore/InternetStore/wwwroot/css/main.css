@@ -3,12 +3,12 @@
 /* GENERAL RULES */
 
 :root {
-    --bg-color: #181818;
-    --bg2-color: #14141D;
-    --bg3-color: #1b1b27;
-    --text-color: #ffffff;
-    --text2-color: #DFDFDF;
-    --accent-color: #da2d2e;
+    --bg-color: #ffffff;
+    --bg2-color: #f1f1f1;
+    --bg3-color: #ebebeb;
+    --text-color: #232323;
+    --text2-color: #666666;
+    --accent-color: #00C084;
     --accent_light-color: #f5f5f5;
 }
 
@@ -105,7 +105,7 @@ a {
 }
 
     .navbar-brand img {
-        max-width: 58px;
+        max-width: 120px;
     }
 
 
@@ -161,7 +161,7 @@ a {
 /* HERO SECTION */
 
 .hero-section {
-    background: url(/img/car.png) center left no-repeat;
+    background: url(/img/field.jpg) center left no-repeat;
     background-size: cover;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -561,6 +561,7 @@ font-weight: 700;
         padding-left: 0;
     }
 }
+
 
 @media (max-width: 768px) {
     .header nav {

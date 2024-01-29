@@ -25,43 +25,46 @@
 
 
                     <ul class="contacts list-inline m-0">
-                        <li class="list-inline-item header-top-icons">
+                        @* <li class="list-inline-item header-top-icons">
                             <a href="https://www.instagram.com/vital1kilchuk/" target="_blank"><i class="fi fi-brands-instagram "></i></a>
 
-                        </li>
+                        </li> *@
                         <li class="list-inline-item header-top-icons">
                             <a href="https://t.me/Vitaliu" target="_blank"><i class="fi fi-brands-telegram "></i></a>
                         </li>
-                        <li class="list-inline-item header-top-icons">
+                        @* <li class="list-inline-item header-top-icons">
                             <a href="https://www.linkedin.com/in/vitalii-ilchuk-tmp/" target="_blank"><i class="fi fi-brands-linkedin "></i></a>
-                        </li>
+                        </li> *@
                         <li class="list-inline-item">
                             <i class="fi fi-rr-envelope header-contacts-icons"></i>
-                            <a href="mailto:vitaliilchuk6@gmail.com" class="header-mail">mail.support</a>
+                            <a href="mailto:vegfruit23@gmail.com" class="header-mail">vegfruit23@gmail.com</a>
                         </li>
                         <li class="list-inline-item">
                             <i class="fi fi-rr-phone-call header-contacts-icons"></i>
-                            <a href="tel:+380987085539" class="header-phone">+380987085539</a>
+                            <a href="tel:+380977690753" class="header-phone">+380977690753</a>
                         </li>
                     </ul>
-
+ 
 
                 </div>
             </div>
 
-            <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <nav class="navbar navbar-expand-lg">
                 <div class="container">
                     <a class="navbar-brand" href="#">
+                        <img src="/img/logo.png" alt="">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas offcanvas-start text-bg-light" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
+                    
                         <div class="offcanvas-body">
+                            <hr>
                             <ul class="navbar-nav me-auto">
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
@@ -70,7 +73,7 @@
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Store
                                     </a>
-                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                    <ul class="dropdown-menu ">
                                         <li><a class="dropdown-item" href="#">Action</a></li>
                                         <li><a class="dropdown-item" href="#">Another action</a></li>
                                         <li>
@@ -96,7 +99,7 @@
                 </div>
             </nav>
 
-            <ul class="header-icons d-none">
+            @* <ul class="header-icons d-none">
                 <li><a href="#"><span class="fi fi-rr-user"></span></a></li>
                 <li><a href="#"><span class="fi fi-rr-heart"></span></a></li>
                 <li>
@@ -104,9 +107,9 @@
                         <span class="fi fi-rr-shopping-cart"></span><span></span>
                     </a>
                 </li>
-            </ul>
+            </ul> *@
 
-            <div class="offcanvas offcanvas-end minicart" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasExampleLabel" data-bs-theme="dark">
+            @* <div class="offcanvas offcanvas-end minicart" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasExampleLabel" data-bs-theme="light">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -163,7 +166,7 @@
                         <a href="#" class="btn btn-warning">Checout</a>
                     </div>
                 </div>   
-            </div>
+            </div> *@
 
 
         </div>
@@ -178,7 +181,6 @@
                     <div class="col-12 col-md-4 footer-logo-inner">
                         <a href="#" class="footer-logo">
                             <img src="/img/logo.png" alt="">
-                            <span>CarStore</span>
                         </a>
                     </div>
 

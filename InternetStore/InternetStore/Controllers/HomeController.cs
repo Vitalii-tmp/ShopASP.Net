@@ -1,6 +1,7 @@
 ﻿using InternetStore.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using Microsoft.AspNetCore.Mvc.Routing;
 
 namespace InternetStore.Controllers
 {
@@ -13,18 +14,18 @@ namespace InternetStore.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
+        public IActionResult Index() => View();
 
-        public IActionResult Product()
-        {
-            return View();
-        }
+        public IActionResult Product() => View();
+
+        public IActionResult Catalog() => View();
+
+        public IActionResult Contacts() => View();
+
+        
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error() 
+        public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }

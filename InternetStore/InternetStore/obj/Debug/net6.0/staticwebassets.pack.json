@@ -17,6 +17,18 @@
       "PackagePath": "staticwebassets\\img\\field.jpg"
     },
     {
+      "Id": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\img\\icon-delivery.png",
+      "PackagePath": "staticwebassets\\img\\icon-delivery.png"
+    },
+    {
+      "Id": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\img\\icon-placeholder.png",
+      "PackagePath": "staticwebassets\\img\\icon-placeholder.png"
+    },
+    {
+      "Id": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\img\\icon-thumbs-up.png",
+      "PackagePath": "staticwebassets\\img\\icon-thumbs-up.png"
+    },
+    {
       "Id": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\img\\logo.png",
       "PackagePath": "staticwebassets\\img\\logo.png"
     },

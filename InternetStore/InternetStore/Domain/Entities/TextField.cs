@@ -10,7 +10,7 @@ namespace InternetStore.Domain.Entities
         [Display(Name = "Заголовок")] 
         public override string Title { get; set; } = "Контакти";
 
-        [Display(Name = "Вміст сторінки")]
+        [Display(Name = "Вміст сторінки")]      
         public override string Text { get; set; } = "Вміст заповнюється адміністратором";
 
 

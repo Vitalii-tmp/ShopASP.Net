@@ -4,14 +4,18 @@ using InternetStore.Domain.Repositories.EntityFramework;
 using InternetStore.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+using System;
+using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddTransient<ITextFieldRepository, EFTextFieldRepository>();
-builder.Services.AddTransient<IProductsItemRepository, EFProductsItemRepository>();
+builder.Services.AddTransient<ITextFieldsRepository, EfTextFieldsRepository>();
+builder.Services.AddTransient<IProductsItemsRepository, EfProductsItemsRepository>();
 builder.Services.AddTransient<DataManager>();
-
+builder.Configuration.Bind("Project", new Config());
 builder.Services.AddDbContext<AppDbContext>(x => x.UseSqlServer(Config.ConnectionString));
+
 
 builder.Services.AddIdentity<IdentityUser, IdentityRole>(opts =>
 {
@@ -37,7 +41,7 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-app.Configuration.Bind("Project", new Config());
+
 
 
 
@@ -59,10 +63,15 @@ app.UseAuthorization();
 app.UseAuthentication();
 app.UseCookiePolicy();
 
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute("default", "/{ action = Index}/{ id ?}");
+
+});
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
-
-

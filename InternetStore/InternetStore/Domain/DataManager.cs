@@ -4,10 +4,10 @@ namespace InternetStore.Domain
 {
     public class DataManager
     {
-        public ITextFieldRepository TextFields { get; set; }
-        public IProductsItemRepository ProductsItems { get; set; }
+        public ITextFieldsRepository TextFields { get; set; }
+        public IProductsItemsRepository ProductsItems { get; set; }
 
-        public DataManager(IProductsItemRepository productsItemsRepository, ITextFieldRepository textFieldsRepository)
+        public DataManager(IProductsItemsRepository productsItemsRepository, ITextFieldsRepository textFieldsRepository)
         {
             TextFields = textFieldsRepository;
             ProductsItems = productsItemsRepository;

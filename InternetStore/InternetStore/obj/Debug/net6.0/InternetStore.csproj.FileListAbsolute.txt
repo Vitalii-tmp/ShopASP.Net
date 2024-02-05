@@ -55,14 +55,8 @@ C:\Users\vital\Study_2023\TeamVebDev\ShopASP.Net\InternetStore\InternetStore\bin
 C:\Users\vital\Study_2023\TeamVebDev\ShopASP.Net\InternetStore\InternetStore\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\vital\Study_2023\TeamVebDev\ShopASP.Net\InternetStore\InternetStore\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\vital\Study_2023\TeamVebDev\ShopASP.Net\InternetStore\InternetStore\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\vital\Study_2023\TeamVebDev\ShopASP.Net\InternetStore\InternetStore\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\vital\Study_2023\TeamVebDev\ShopASP.Net\InternetStore\InternetStore\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\vital\Study_2023\TeamVebDev\ShopASP.Net\InternetStore\InternetStore\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
-C:\Users\vital\Study_2023\TeamVebDev\ShopASP.Net\InternetStore\InternetStore\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
-C:\Users\vital\Study_2023\TeamVebDev\ShopASP.Net\InternetStore\InternetStore\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\vital\Study_2023\TeamVebDev\ShopASP.Net\InternetStore\InternetStore\bin\Debug\net6.0\Microsoft.Extensions.Logging.Debug.dll
-C:\Users\vital\Study_2023\TeamVebDev\ShopASP.Net\InternetStore\InternetStore\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
-C:\Users\vital\Study_2023\TeamVebDev\ShopASP.Net\InternetStore\InternetStore\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
 C:\Users\vital\Study_2023\TeamVebDev\ShopASP.Net\InternetStore\InternetStore\bin\Debug\net6.0\Microsoft.Identity.Client.dll
 C:\Users\vital\Study_2023\TeamVebDev\ShopASP.Net\InternetStore\InternetStore\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\vital\Study_2023\TeamVebDev\ShopASP.Net\InternetStore\InternetStore\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll

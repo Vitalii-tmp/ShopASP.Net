@@ -1,5 +1,6 @@
 ﻿using InternetStore.Domain.Entities;
-
+using System;
+using System.Linq;
 namespace InternetStore.Domain.Repositories.Abstract
 {
     public interface IProductsItemsRepository

@@ -9,6 +9,9 @@ using System;
 using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
+    
 
 builder.Services.AddTransient<ITextFieldsRepository, EfTextFieldsRepository>();
 builder.Services.AddTransient<IProductsItemsRepository, EfProductsItemsRepository>();
@@ -36,9 +39,14 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.SlidingExpiration = true;
 });
 
-// Add services to the container.
-builder.Services.AddControllersWithViews();
 
+builder.Services.AddAuthorization(x =>
+{
+    x.AddPolicy("AdminArea", policy => { policy.RequireRole("admin"); });
+});
+
+// Add services to the container.
+builder.Services.AddControllersWithViews(x => { x.Conventions.Add(new AdminAreaAuthorization("Admin", "AdminArea")); });
 var app = builder.Build();
 
 
@@ -66,6 +74,7 @@ app.UseCookiePolicy();
 
 app.UseEndpoints(endpoints =>
 {
+    endpoints.MapControllerRoute("admin", "{area:exists}/{controller=Home}/{action=Index}/{id?}");
     endpoints.MapControllerRoute("default", "/{ action = Index}/{ id ?}");
 
 });
@@ -73,5 +82,8 @@ app.UseEndpoints(endpoints =>
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+app.MapControllerRoute(
+    name: "admin",
+    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

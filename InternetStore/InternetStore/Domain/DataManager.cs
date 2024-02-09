@@ -5,12 +5,12 @@ namespace InternetStore.Domain
     public class DataManager
     {
         public ITextFieldsRepository TextFields { get; set; }
-        public IProductsItemsRepository ProductsItems { get; set; }
+        public IProductsItemsRepository ProductItems { get; set; }
 
-        public DataManager(IProductsItemsRepository productsItemsRepository, ITextFieldsRepository textFieldsRepository)
+        public DataManager(IProductsItemsRepository productItemsRepository, ITextFieldsRepository textFieldsRepository)
         {
             TextFields = textFieldsRepository;
-            ProductsItems = productsItemsRepository;
+            ProductItems = productItemsRepository;
         }
     }
 }

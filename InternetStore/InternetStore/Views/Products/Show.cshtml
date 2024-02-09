@@ -1,0 +1,44 @@
+﻿@model InternetStore.Domain.Entities.ProductItem
+@{
+    ViewBag.Title = Model.MetaTitle;
+    ViewBag.Description = Model.MetaDescription;
+    ViewBag.Keywords = Model.MetaKeyWords;
+}
+<main class="product-page">
+    <div class="container">
+    
+        <div class="row">
+            <div class="col-md-6">
+                <div class="product-image">
+                    <img class="img-block" src="~/img/@Model.TitleImagePath" />
+                </div>
+
+            </div>
+        
+            <div class="col-md-6">
+                <div class="product-page-actions">
+                    <div class="product-name">
+                        <h3> @Model.Title</h3>
+                
+                        <div class="product-price">
+                            <h3>Ціна: </h3>
+                            <span>$99.99</span>
+                        </div>
+                
+                    </div>
+                
+                    <div class="product-description">
+                        <h3>Опис</h3>
+                        <div class="product-description-content">
+                            <ul>
+                                @Model.SubTitle
+                                @Html.Raw(Model.Text)
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>

@@ -26,7 +26,11 @@ namespace InternetStore.Domain.Repositories.EntityFramework
 
         public void SaveProductItem(ProductItem entity)
         {
-            context.Entry(entity).State = entity.Id == default ? EntityState.Added : EntityState.Modified;
+            if (entity.Id == default)
+                context.Entry(entity).State = EntityState.Added;
+            else
+                context.Entry(entity).State = EntityState.Modified;
+            context.SaveChanges();
         }
 
         public void DeleteProductItem(Guid id)

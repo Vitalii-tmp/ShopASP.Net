@@ -1,5 +1,9 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model InternetStore.Domain.Entities.TextField
+@{
+    ViewBag.Title = Model.MetaTitle;
+    ViewBag.Description = Model.MetaDescription;
+    ViewBag.Keywords = Model.MetaKeyWords;
 }
 
 <main class="main">
@@ -24,222 +28,13 @@
                 </div>
 
                 <div class="banner-section-content">
-                    <h3>ТОВ "ВЕГФРУТ"</h3>
-                    <p>Товариство з обмеженою відповідальністю "ВЕГФРУТ" Наше підприємство спеціалізується на оптовій торгівлі продуктами харчування(від 1 тонни), зокрема свіжі овочі, фрукти та плодово-овочева консервація. Наш асортимент включає широкий вибір якісних продуктів, що постачаються безпосередньо від виробників. Маємо хороший досвід експорту продуктів із Польщі, Нідерландів, Бельгії, Португалії, Литви та інших європейських  країн.Продукція компанії повністю сертифікована та відповідає всім показникам якості.Ми пропонуємо надійні поставки та високий стандарт обслуговування наших клієнтів.</p>
+                    <h3>@Html.Raw(Model.Title)</h3>
+                    <p>@Html.Raw(Model.Text)</p>
                 </div>
             </div>
         </div>
     </section>
 
-    @* <section class="sales-section">
-    <div class="container">
-    <h3 class="h-title">Sales</h3>
-    <div class="row">
-    <div class="col-lg-4 col-md-6">
-    <div class="product-card">
-    <div class="product-card-img">
-    <img src="/img/product1.png" alt="">
-    </div>
-    <div class="product-card-content">
-    <h3><a asp-area="" asp-controller="Home" asp-action="product">BBC-XR</a></h3>
-    <div class="product-card-details d-flex justify-content-between">
-    <div class="product-price">
-    <span>$199.99</span>
-    </div>
-    <div class="product-actions">
-    <a href="#" class="add2fav"><span class="fi fi-rr-heart"></span></a>
-    <a href="#" class="add2cart"><span class="fi fi-rr-shopping-cart"></span></a>
-    </div>
-    </div>
-    </div>
-    </div>
-
-    </div>
-    <div class="col-lg-4 col-md-6">
-    <div class="product-card">
-    <div class="product-card-img">
-    <img src="/img/product2.png" alt="">
-    </div>
-    <div class="product-card-content">
-    <h3><a asp-area="" asp-controller="Home" asp-action="product">BBS-CH-R</a></h3>
-    <div class="product-card-details d-flex justify-content-between">
-    <div class="product-price">
-    <span>$99.99</span>
-    <small>$199.99</small>
-    </div>
-    <div class="product-actions">
-    <a href="#" class="add2fav"><span class="fi fi-rr-heart"></span></a>
-    <a href="#" class="add2cart"><span class="fi fi-rr-shopping-cart"></span></a>
-    </div>
-    </div>
-    </div>
-    </div>
-
-    </div>
-    <div class="col-lg-4 col-md-6">
-    <div class="product-card">
-    <div class="product-card-img">
-    <img src="/img/product3.png" alt="">
-    </div>
-    <div class="product-card-content">
-    <h3><a asp-area="" asp-controller="Home" asp-action="product">BBS-CH-R</a></h3>
-    <div class="product-card-details d-flex justify-content-between">
-    <div class="product-price">
-    <span>$99.99</span>
-    <small>$199.99</small>
-    </div>
-    <div class="product-actions">
-    <a href="#" class="add2fav"><span class="fi fi-rr-heart"></span></a>
-    <a href="#" class="add2cart"><span class="fi fi-rr-shopping-cart"></span></a>
-    </div>
-    </div>
-    </div>
-    </div>
-
-    </div>
-    <div class="col-lg-4 col-md-6">
-    <div class="product-card">
-    <div class="product-card-img">
-    <img src="/img/product4.png" alt="">
-    </div>
-    <div class="product-card-content">
-    <h3><a asp-area="" asp-controller="Home" asp-action="product">BBS-LM</a></h3>
-    <div class="product-card-details d-flex justify-content-between">
-    <div class="product-price">
-    <span>$99.99</span>
-    <small>$199.99</small>
-    </div>
-    <div class="product-actions">
-    <a href="#" class="add2fav"><span class="fi fi-rr-heart"></span></a>
-    <a href="#" class="add2cart"><span class="fi fi-rr-shopping-cart"></span></a>
-    </div>
-    </div>
-    </div>
-    </div>
-
-    </div>
-    <div class="col-lg-4 col-md-6">
-    <div class="product-card">
-    <div class="product-card-img">
-    <img src="/img/BBS-RS-Gold.png" alt="">
-    </div>
-    <div class="product-card-content">
-    <h3><a asp-area="" asp-controller="Home" asp-action="product">BBS-RS-Gold</a></h3>
-    <div class="product-card-details d-flex justify-content-between">
-    <div class="product-price">
-    <span>$99.99</span>
-    <small>$199.99</small>
-    </div>
-    <div class="product-actions">
-    <a href="#" class="add2fav"><span class="fi fi-rr-heart"></span></a>
-    <a href="#" class="add2cart"><span class="fi fi-rr-shopping-cart"></span></a>
-    </div>
-    </div>
-    </div>
-    </div>
-
-    </div>
-    <div class="col-lg-4 col-md-6">
-    <div class="product-card">
-    <div class="product-card-img">
-    <img src="/img/BBS-RS-Silver.png" alt="">
-    </div>
-    <div class="product-card-content">
-    <h3><a asp-area="" asp-controller="Home" asp-action="product">BBS-RS-Silver</a></h3>
-    <div class="product-card-details d-flex justify-content-between">
-    <div class="product-price">
-    <span>$99.99</span>
-    <small>$199.99</small>
-    </div>
-    <div class="product-actions">
-    <a href="#" class="add2fav"><span class="fi fi-rr-heart"></span></a>
-    <a href="#" class="add2cart"><span class="fi fi-rr-shopping-cart"></span></a>
-    </div>
-    </div>
-    </div>
-    </div>
-
-    </div>
-    </div>
-    </div>
-    </section> *@
-
-    @*
-    <section class="news-section">
-    <div class="container">
-    <h3 class="h-title" href="#">News</h3>
-    <div class="row">
-    <div class="col-md-4">
-    <div class="card">
-    <img src="/img/news1.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-    <h5 class="card-title">Porshe on F1</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-    </div>
-    </div>
-    <div class="col-md-4">
-    <div class="card">
-    <img src="/img/news2.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-    <h5 class="card-title">Porshe on F1</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-    </div>
-    </div>
-    <div class="col-md-4">
-    <div class="card">
-    <img src="/img/news3.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-    <h5 class="card-title">Porshe on F1</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-    </div>
-    </div>
-
-    </div>
-    </div>
-    </section> *@
-
-    @* <section class="options-section">
-    <div class="container">
-
-    <div class="row">
-
-    <div class="col-lg-2 col-md-12"></div>
-    <div class="col-lg-2 col-md-12">
-    <div class="options-card">
-    <img src="/img/icon-delivery.png" class="options-card-img" alt="...">
-    <div class="options-card-body">
-    <h5 class="options-card-title">Porshe on F1</h5>
-    <p class="options-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-    </div>
-
-    </div>
-    <div class="col-lg-2 col-md-12">
-    <div class="options-card">
-    <img src="/img/icon-placeholder.png" class="options-card-img" alt="...">
-    <div class="options-card-body">
-    <h5 class="options-card-title">Porshe on F1</h5>
-    <p class="options-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-    </div>
-    </div>
-    <div class="col-lg-2 col-md-12">
-    <div class="options-card">
-    <img src="/img/icon-thumbs-up.png" class="optioons-card-img" alt="...">
-    <div class="options-card-body">
-    <h5 class="options-card-title">Porshe on F1</h5>
-    <p class="options-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-    </div>
-    </div>
-
-    </div>
-    </div>
-
-    </section> *@
 
     <div class="container">
         <div class="testcard-container">

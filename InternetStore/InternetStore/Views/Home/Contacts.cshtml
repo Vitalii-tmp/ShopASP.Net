@@ -1,5 +1,8 @@
+@model InternetStore.Domain.Entities.TextField
 @{
-    ViewData["Title"] = "Contacts page";
+    ViewBag.Title = Model.MetaTitle;
+    ViewBag.Description = Model.MetaDescription;
+    ViewBag.Keywords = Model.MetaKeyWords;
 }
 
 <main class="contacts-page">
@@ -10,8 +13,6 @@
         <h3>Електронна пошта: <a href="mailto:vegfruit23@gmail.com" class="header-mail">vegfruit23@gmail.com</a></h3>
         <h3>Адреса: м. Рівне, вул. Драгоманова 27А</h3>
     </div>
-    
-
 
 </div>
 <div class="gmap">

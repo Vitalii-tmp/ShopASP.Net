@@ -1,0 +1,62 @@
+﻿@using InternetStore.Domain.Entities
+@model IQueryable<ProductItem>
+@{
+    TextField textField = ViewBag.TextField;
+
+    ViewBag.Title = textField.MetaTitle;
+    ViewBag.Description = textField.MetaDescription;
+    ViewBag.Keywords = textField.MetaKeyWords;
+}
+
+<main class="product-page">
+    <div class="container">
+        <div>
+            @if (Model.Any())
+            {
+
+                @foreach (ProductItem entity in Model)
+                {
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="product-image">
+                                <a asp-area="" asp-controller="Products" asp-action="Index" asp-route-id="@entity.Id">
+                                    <img src="~/images/@entity.TitleImagePath" alt="" class="left" />
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="product-page-actions">
+                                <div class="product-name">
+                                    <h3>@entity.Title</h3>
+
+                                    <div class="product-price">
+                                        <h3>Ціна: </h3>
+                                        <span>$99.99</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="product-description">
+                                    <h3>Опис</h3>
+                                    <div class="product-description-content">
+                                        <ul>
+                                            <li>@entity.SubTitle </li>
+                                            <li>Nam hendrerit </li>
+                                            <li>Vivamus ac sodales erat. </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                }
+
+            }
+        </div>
+
+    </div>
+</main>

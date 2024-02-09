@@ -1,0 +1,44 @@
+﻿@model LoginViewModel
+
+@* @{
+    Layout = null;
+} *@
+
+<link rel="stylesheet" href="~/css/login.css">
+
+<section class="login-section">
+    <div class="login-form">
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form  asp-area="" asp-controller="Account" asp-action="Login" method="post" asp-route-returnUrl="@ViewBag.returnUrl">
+                <div asp-validation-summary="All"></div>
+                <div class="input-box" >
+                    <span class="icon" >
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input asp-for="UserName" required>
+                    <label asp-for="UserName">Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon" >
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input asp-for="Password" type="password" required>
+                    <label asp-for="Password">Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label asp-for="RememberMe"><input asp-for="RememberMe" type="checkbox"> Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+    </div> 
+</section>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+   

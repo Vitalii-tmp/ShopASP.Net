@@ -40,6 +40,9 @@ namespace InternetStore.Migrations
                     b.Property<string>("MetaTitle")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Price")
+                        .HasColumnType("int");
+
                     b.Property<string>("SubTitle")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -105,7 +108,7 @@ namespace InternetStore.Migrations
                         {
                             Id = new Guid("5225d362-5d1c-4ff8-bf4d-e1cd82f91192"),
                             CodeWord = "HomePage",
-                            DateAdded = new DateTime(2024, 2, 5, 12, 42, 35, 623, DateTimeKind.Utc).AddTicks(3341),
+                            DateAdded = new DateTime(2024, 2, 9, 15, 44, 40, 208, DateTimeKind.Utc).AddTicks(9129),
                             Text = "Вміст заповнюється адміністратором",
                             Title = "Головна"
                         },
@@ -113,7 +116,7 @@ namespace InternetStore.Migrations
                         {
                             Id = new Guid("e3104e57-225b-473a-a8fc-8275b7cd662d"),
                             CodeWord = "CatalogPage",
-                            DateAdded = new DateTime(2024, 2, 5, 12, 42, 35, 623, DateTimeKind.Utc).AddTicks(3376),
+                            DateAdded = new DateTime(2024, 2, 9, 15, 44, 40, 208, DateTimeKind.Utc).AddTicks(9173),
                             Text = "Вміст заповнюється адміністратором",
                             Title = "Каталог"
                         },
@@ -121,7 +124,7 @@ namespace InternetStore.Migrations
                         {
                             Id = new Guid("3ebd4da3-48f7-4f17-a876-b800a51d7930"),
                             CodeWord = "ContactsPage",
-                            DateAdded = new DateTime(2024, 2, 5, 12, 42, 35, 623, DateTimeKind.Utc).AddTicks(3387),
+                            DateAdded = new DateTime(2024, 2, 9, 15, 44, 40, 208, DateTimeKind.Utc).AddTicks(9181),
                             Text = "Вміст заповнюється адміністратором",
                             Title = "Контакти"
                         });
@@ -157,7 +160,7 @@ namespace InternetStore.Migrations
                         new
                         {
                             Id = "8a3f0009-3602-4548-8bcb-4ff4e8420830",
-                            ConcurrencyStamp = "c8343842-bf47-45f8-a7bb-648416fe8267",
+                            ConcurrencyStamp = "8ed895df-c0da-468d-873a-669ed9dff439",
                             Name = "admin",
                             NormalizedName = "ADMIN"
                         });
@@ -257,13 +260,13 @@ namespace InternetStore.Migrations
                         {
                             Id = "762b0a0d-c46d-4670-abc8-a5c5029b3ec7",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "8a0f2986-8927-4580-bbc3-a8290701db48",
-                            Email = "myemail@gmail.com",
+                            ConcurrencyStamp = "dd962be5-0000-47c8-9e99-d6cfff22832d",
+                            Email = "vegfruit23@gmail.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
-                            NormalizedEmail = "MYEMAIL@GMAIL.COM",
+                            NormalizedEmail = "VEGFRUIT23@GMAIL.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEHleQUIPtq2a5Zvmws9D99idrlXUuU58Sy+fIZ4mg0LSmBXv/9C89DQnTyLlWDP0RA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEKUixaE9gi2y+6Bc7CPSVotYZUC1X0lbman7PtyPg0Ogvia9ulntbZ5TIk+I1wRe8Q==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,

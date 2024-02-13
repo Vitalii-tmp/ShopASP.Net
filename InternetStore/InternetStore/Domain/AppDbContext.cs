@@ -27,8 +27,8 @@ namespace InternetStore.Domain
                 Id= "762b0a0d-c46d-4670-abc8-a5c5029b3ec7",
                 UserName = "admin",
                 NormalizedUserName = "ADMIN",
-                Email = "myemail@gmail.com",
-                NormalizedEmail = "MYEMAIL@GMAIL.COM",
+                Email = "vegfruit23@gmail.com",
+                NormalizedEmail = "VEGFRUIT23@GMAIL.COM",
                 EmailConfirmed = true,
                 PasswordHash = new PasswordHasher<IdentityUser>().HashPassword(null,"superpassword"),
                 SecurityStamp = string.Empty

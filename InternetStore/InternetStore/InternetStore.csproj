@@ -32,6 +32,7 @@
   <ItemGroup>
     <_ContentIncludedByDefault Remove="Views\Products\Show.cshtml" />
     <_ContentIncludedByDefault Remove="Views\Home\Error.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\Components\Bottombar\Default.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -288,6 +289,10 @@
 
   <ItemGroup>
     <UpToDateCheckInput Remove="Views\Products\Show.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\Components\Bottombar\Default.cshtml" />
   </ItemGroup>
 
 </Project>

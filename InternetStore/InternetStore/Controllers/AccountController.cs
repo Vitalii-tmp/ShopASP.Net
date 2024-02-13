@@ -38,7 +38,7 @@ namespace InternetStore.Controllers
                         return Redirect(returnUrl ?? "/");
                     }
                 }
-                ModelState.AddModelError(nameof(LoginViewModel.UserName), "Неверный логин или пароль");
+                ModelState.AddModelError(nameof(LoginViewModel.UserName), "Не правильний логін або пароль");
             }
             return View(model);
         }

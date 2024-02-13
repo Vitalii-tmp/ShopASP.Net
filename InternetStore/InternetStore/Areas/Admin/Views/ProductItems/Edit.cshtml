@@ -1,6 +1,6 @@
 ﻿@model ProductItem
 @{
-    string strTitle = "Редактировать запись";
+    string strTitle = "Редагувати запис";
     ViewBag.Title = strTitle;
 }
 
@@ -24,6 +24,11 @@
                 <label asp-for="SubTitle"></label>
                 <input asp-for="SubTitle" />
                 <span asp-validation-for="SubTitle"></span>
+            </div>
+            <div class="div-box">
+                <label asp-for="Price"></label>
+                <input asp-for="Price" />
+                <span asp-validation-for="Price"></span>
             </div>
             <div class="div-box">
                 <label asp-for="Text"></label>
@@ -52,7 +57,7 @@
                 <input asp-for="MetaKeyWords" />
                 <span asp-validation-for="MetaKeyWords"></span>
             </div>
-            <input type="submit" value="Сохранить" />
+            <input type="submit" value="Зберегти" />
         </form>
     </div>
 </div>

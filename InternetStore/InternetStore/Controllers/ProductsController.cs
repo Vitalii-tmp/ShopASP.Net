@@ -20,7 +20,7 @@ namespace InternetStore.Controllers
                 return View("Show", dataManager.ProductItems.GetProductItemById(id));
             }
 
-            ViewBag.TextField = dataManager.TextFields.GetTextFieldByCodeWord("PageServices");
+            ViewBag.TextField = dataManager.TextFields.GetTextFieldByCodeWord("CatalogPage");
             return View(dataManager.ProductItems.GetProductItems());
         }
     }

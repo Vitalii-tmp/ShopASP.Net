@@ -22,7 +22,7 @@
                 
                         <div class="product-price">
                             <h3>Ціна: </h3>
-                            <span>$99.99</span>
+                            <span>@Model.Price</span>
                         </div>
                 
                     </div>
@@ -40,5 +40,10 @@
             </div>
 
         </div>
+        
+        
+        <h3> Інші наші продукти</h3>
+        @await Html.PartialAsync("Bottombar")
+
     </div>
 </main>

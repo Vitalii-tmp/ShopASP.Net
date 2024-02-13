@@ -14,5 +14,7 @@ namespace InternetStore.Domain.Entities
         [Display(Name = "Повний опис товару")]
         public override string Text { get; set; } = "Вміст заповнюється адміністратором";
 
+        [Display(Name = "Ціна товару")] public int Price { get; set; } = 0;
+
     }
 }

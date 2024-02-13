@@ -9,16 +9,16 @@ namespace InternetStore.Domain.Entities
         [Required]
         public Guid Id { get; set; }
 
-        [Display(Name = "Название (заголовок)")]
+        [Display(Name = "Назва (заголовок)")]
         public virtual string? Title { get; set; }
 
-        [Display(Name = "Краткое описание")]
+        [Display(Name = "Короткий опис")]
         public virtual string? SubTitle { get; set; }
 
-        [Display(Name = "Полное описание")]
+        [Display(Name = "Повний опис")]
         public virtual string? Text { get; set; }
 
-        [Display(Name = "Титульная картинка")]
+        [Display(Name = "Титульна картинка")]
         public virtual string? TitleImagePath { get; set; }
 
         [Display(Name = "SEO метатег Title")]

@@ -8,55 +8,48 @@
     ViewBag.Keywords = textField.MetaKeyWords;
 }
 
-<main class="product-page">
-    <div class="container">
-        <div>
-            @if (Model.Any())
-            {
 
-                @foreach (ProductItem entity in Model)
+
+<main class="catalog-page">
+
+    <section class="sales-section">
+        <div class="container">
+            <h3 class="h-title">Наш асортимент</h3>
+            <div class="row g-0">
+                @if (Model.Any())
                 {
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="product-image">
-                                <a asp-area="" asp-controller="Products" asp-action="Index" asp-route-id="@entity.Id">
-                                    <img src="~/images/@entity.TitleImagePath" alt="" class="left" />
-                                </a>
+
+                    @foreach (ProductItem entity in Model)
+                    {
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product-card">
+                                <div class="product-card-img">
+                                    <a asp-area="" asp-controller="Products" asp-action="Index" asp-route-id="@entity.Id">
+                                        <img src="~/img/@entity.TitleImagePath" alt="" class="left" />
+                                    </a>
+                                </div>
+                                <div class="product-card-content">
+                                    <h3><a asp-area="" asp-controller="Products" asp-action="Index" asp-route-id="@entity.Id">@entity.Title</a></h3>
+                                    <div class="product-card-details d-flex justify-content-between">
+
+                                        <span>@entity.Price</span>
+
+
+                                        <span>В наявності</span>
+
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
 
-                        <div class="col-md-6">
-                            <div class="product-page-actions">
-                                <div class="product-name">
-                                    <h3>@entity.Title</h3>
 
-                                    <div class="product-price">
-                                        <h3>Ціна: </h3>
-                                        <span>$99.99</span>
-                                    </div>
 
-                                </div>
-
-                                <div class="product-description">
-                                    <h3>Опис</h3>
-                                    <div class="product-description-content">
-                                        <ul>
-                                            <li>@entity.SubTitle </li>
-                                            <li>Nam hendrerit </li>
-                                            <li>Vivamus ac sodales erat. </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    
+                    }
                 }
-
-            }
+            </div>
         </div>
+    </section>
 
-    </div>
 </main>

@@ -1,6 +1,6 @@
 ﻿@model IQueryable<ProductItem>
 @{
-    string strTitle = "Панель адміна";
+    string strTitle = "Панель адміністратора";
     ViewBag.Title = strTitle;
 }
 
@@ -8,9 +8,9 @@
 <div>
     <h2>@strTitle</h2>
     <div>
-        <h3>Наши услуги</h3>
+        <h3>Наші продукти</h3>
         <div class="div-box">
-            <a asp-area="Admin" asp-controller="ProductItems" asp-action="Edit" asp-route-id="">Добавить услугу</a>
+            <a asp-area="Admin" asp-controller="ProductItems" asp-action="Edit" asp-route-id="">Додати продукт</a>
         </div>
         @if (Model.Any())
         {
@@ -18,11 +18,11 @@
                 @foreach (ProductItem entity in Model)
                 {
                     <div>
-                        <a asp-area="Admin" asp-controller="ProductItems" asp-action="Edit" asp-route-id="@entity.Id">редактировать</a>
+                        <a asp-area="Admin" asp-controller="ProductItems" asp-action="Edit" asp-route-id="@entity.Id">Редагувати</a>
                         |
                         <form style="display: inline-block;" id="form-@entity.Id" asp-area="Admin" asp-controller="ProductItems" asp-action="Delete" method="post">
                             <input type="hidden" name="id" value="@entity.Id">
-                            <a href="#" onclick="document.getElementById('form-@entity.Id').submit();">удалить</a>
+                            <a href="#" onclick="document.getElementById('form-@entity.Id').submit();">видалити</a>
                         </form>
                         |
                         <a asp-area="" asp-controller="Products" asp-action="Index" asp-route-id="@entity.Id">

@@ -1,0 +1,41 @@
+﻿@using InternetStore.Domain.Entities
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model IQueryable<InternetStore.Domain.Entities.ProductItem>
+
+@if (Model?.Any() == true)
+{
+    <div class="row g-0">
+        @if (Model.Any())
+        {
+
+            @foreach (ProductItem entity in Model)
+            {
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card">
+                        <div class="product-card-img">
+                            <a asp-area="" asp-controller="Products" asp-action="Index" asp-route-id="@entity.Id">
+                                <img src="~/img/@entity.TitleImagePath" alt="" class="left" />
+                            </a>
+                        </div>
+                        <div class="product-card-content">
+                            <h3><a asp-area="" asp-controller="Products" asp-action="Index" asp-route-id="@entity.Id">@entity.Title</a></h3>
+                            <div class="product-card-details d-flex justify-content-between">
+
+                                <span>@entity.SubTitle</span>
+
+
+                                <span>В наявності</span>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            }
+        }
+    </div>
+}

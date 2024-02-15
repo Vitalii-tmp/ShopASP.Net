@@ -16,5 +16,8 @@ namespace InternetStore.Domain.Entities
 
         [Display(Name = "Ціна товару")] public int Price { get; set; } = 0;
 
+        [Display(Name = "Титульна картинка")]
+        public override string? TitleImagePath { get; set; }
+
     }
 }

@@ -25,9 +25,10 @@ namespace InternetStore.Areas.Admin.Controllers
             var entity = id == default ? new ProductItem() : dataManager.ProductItems.GetProductItemById(id);
             return View(entity);
         }
+        
         [HttpPost]
         public IActionResult Edit(ProductItem model, IFormFile titleImageFile)
-        {
+        {   
             if (ModelState.IsValid)
             {
                 if (titleImageFile != null)

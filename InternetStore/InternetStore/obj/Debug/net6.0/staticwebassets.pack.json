@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\css\\adminpanel.css",
+      "PackagePath": "staticwebassets\\css\\adminpanel.css"
+    },
+    {
       "Id": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\css\\login.css",
       "PackagePath": "staticwebassets\\css\\login.css"
     },
@@ -11,6 +15,14 @@
     {
       "Id": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\img\\11111.png",
+      "PackagePath": "staticwebassets\\img\\11111.png"
+    },
+    {
+      "Id": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\img\\111111111111.jpg",
+      "PackagePath": "staticwebassets\\img\\111111111111.jpg"
     },
     {
       "Id": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\img\\Screenshot 2024-01-28 004152.png",
@@ -39,6 +51,10 @@
     {
       "Id": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\img\\icon-thumbs-up.png",
       "PackagePath": "staticwebassets\\img\\icon-thumbs-up.png"
+    },
+    {
+      "Id": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\img\\logo-icon.png",
+      "PackagePath": "staticwebassets\\img\\logo-icon.png"
     },
     {
       "Id": "C:\\Users\\vital\\Study_2023\\TeamVebDev\\ShopASP.Net\\InternetStore\\InternetStore\\wwwroot\\img\\logo.png",

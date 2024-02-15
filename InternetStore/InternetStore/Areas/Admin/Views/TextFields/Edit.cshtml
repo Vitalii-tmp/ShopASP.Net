@@ -6,49 +6,49 @@
 
 <script src="~/js/ckeditor/ckeditor.js"></script>
 
-<div>
+<div class="container">
     <h2>@strTitle</h2>
-    <div>
-        <form asp-area="Admin" asp-controller="TextFields" asp-action="Edit" method="post" enctype="multipart/form-data">
-            <input type="hidden" asp-for="Id" />
-            <input type="hidden" asp-for="DateAdded" />
-            <input type="hidden" asp-for="CodeWord" />
+    <div class="row">
+        <div class="col-md-6">
+            <form asp-area="Admin" asp-controller="TextFields" asp-action="Edit" method="post" enctype="multipart/form-data">
+                <input type="hidden" asp-for="Id" />
+                <input type="hidden" asp-for="DateAdded" />
+                <input type="hidden" asp-for="CodeWord" />
 
-            <div asp-validation-summary="All"></div>
-            <div class="div-box">
-                <label asp-for="Title"></label>
-                <input asp-for="Title" />
-                <span asp-validation-for="Title"></span>
-            </div>
-            <div class="div-box">
-                <label asp-for="Text"></label>
-                <textarea asp-for="Text"></textarea>
-                <span asp-validation-for="Text"></span>
-            </div>
-            <div class="div-box">
-                <label asp-for="MetaTitle"></label>
-                <input asp-for="MetaTitle" />
-                <span asp-validation-for="MetaTitle"></span>
-            </div>
-            <div class="div-box">
-                <label asp-for="MetaDescription"></label>
-                <input asp-for="MetaDescription" />
-                <span asp-validation-for="MetaDescription"></span>
-            </div>
-            <div class="div-box">
-                <label asp-for="MetaKeyWords"></label>
-                <input asp-for="MetaKeyWords" />
-                <span asp-validation-for="MetaKeyWords"></span>
-            </div>
-            <input type="submit" value="Сохранить" />
-        </form>
+                <div asp-validation-summary="All" class="mb-3"></div>
+                <div class="mb-3">
+                    <label asp-for="Title" class="form-label"></label>
+                    <input asp-for="Title" class="form-control" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Text" class="form-label"></label>
+                    <textarea asp-for="Text" class="form-control"></textarea>
+                    <span asp-validation-for="Text" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="MetaTitle" class="form-label"></label>
+                    <input asp-for="MetaTitle" class="form-control" />
+                    <span asp-validation-for="MetaTitle" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="MetaDescription" class="form-label"></label>
+                    <input asp-for="MetaDescription" class="form-control" />
+                    <span asp-validation-for="MetaDescription" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="MetaKeyWords" class="form-label"></label>
+                    <input asp-for="MetaKeyWords" class="form-control" />
+                    <span asp-validation-for="MetaKeyWords" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-primary admin-save-btn">Сохранить</button>
+            </form>
+        </div>
     </div>
 </div>
 
-
-
 <script>
-    window.onload = function() {
+    window.onload = function () {
         var newCKEdit = CKEDITOR.replace('@Html.IdFor(x=>x.Text)');
         newCKEdit.updateElement();
     }

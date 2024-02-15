@@ -6,63 +6,63 @@
 
 <script src="~/js/ckeditor/ckeditor.js"></script>
 
-<div>
+<div class="container">
     <h2>@strTitle</h2>
-    <div>
-        <form asp-area="Admin" asp-controller="ProductItems" asp-action="Edit" method="post" enctype="multipart/form-data">
-            <input type="hidden" asp-for="Id" />
-            <input type="hidden" asp-for="DateAdded" />
-            <input type="hidden" asp-for="TitleImagePath" />
+    <div class="row">
+        <div class="col-md-6">
+            <form asp-area="Admin" asp-controller="ProductItems" asp-action="Edit" method="post" enctype="multipart/form-data">
+                <input type="hidden" asp-for="Id" />
+                <input type="hidden" asp-for="DateAdded" />
+                <input type="hidden" asp-for="TitleImagePath" />
 
-            <div asp-validation-summary="All"></div>
-            <div class="div-box">
-                <label asp-for="Title"></label>
-                <input asp-for="Title" />
-                <span asp-validation-for="Title"></span>
-            </div>
-            <div class="div-box">
-                <label asp-for="SubTitle"></label>
-                <input asp-for="SubTitle" />
-                <span asp-validation-for="SubTitle"></span>
-            </div>
-            <div class="div-box">
-                <label asp-for="Price"></label>
-                <input asp-for="Price" />
-                <span asp-validation-for="Price"></span>
-            </div>
-            <div class="div-box">
-                <label asp-for="Text"></label>
-                <textarea asp-for="Text"></textarea>
-                <span asp-validation-for="Text"></span>
-            </div>
-            <div class="div-box">
-                <label asp-for="TitleImagePath"></label>
-                <input type="file" name="titleImageFile" id="titleImageFile" accept="image/*"  required="true"/>
-                <div>
-                    <img class="img-block" src="~/img/@Model.TitleImagePath" />
+                <div asp-validation-summary="All" class="mb-3"></div>
+                <div class="mb-3">
+                    <label asp-for="Title" class="form-label"></label>
+                    <input asp-for="Title" class="form-control" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
                 </div>
-            </div>
-            <div class="div-box">
-                <label asp-for="MetaTitle"></label>
-                <input asp-for="MetaTitle" />
-                <span asp-validation-for="MetaTitle"></span>
-            </div>
-            <div class="div-box">
-                <label asp-for="MetaDescription"></label>
-                <input asp-for="MetaDescription" />
-                <span asp-validation-for="MetaDescription"></span>
-            </div>
-            <div class="div-box">
-                <label asp-for="MetaKeyWords"></label>
-                <input asp-for="MetaKeyWords" />
-                <span asp-validation-for="MetaKeyWords"></span>
-            </div>
-            <input type="submit" value="Зберегти" />
-        </form>
+                <div class="mb-3">
+                    <label asp-for="SubTitle" class="form-label"></label>
+                    <input asp-for="SubTitle" class="form-control" />
+                    <span asp-validation-for="SubTitle" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Price" class="form-label"></label>
+                    <input asp-for="Price" class="form-control" />
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Text" class="form-label"></label>
+                    <textarea asp-for="Text" class="form-control"></textarea>
+                    <span asp-validation-for="Text" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="TitleImagePath" class="form-label"></label>
+                    <input type="file" name="titleImageFile" id="titleImageFile" class="form-control" accept="image/*" required="true" />
+                    <div>
+                        <img class="img-fluid" src="~/img/@Model.TitleImagePath " alt="none"/>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="MetaTitle" class="form-label"></label>
+                    <input asp-for="MetaTitle" class="form-control" />
+                    <span asp-validation-for="MetaTitle" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="MetaDescription" class="form-label"></label>
+                    <input asp-for="MetaDescription" class="form-control" />
+                    <span asp-validation-for="MetaDescription" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="MetaKeyWords" class="form-label"></label>
+                    <input asp-for="MetaKeyWords" class="form-control" />
+                    <span asp-validation-for="MetaKeyWords" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-primary admin-save-btn">Зберегти</button>
+            </form>
+        </div>
     </div>
 </div>
-
-
 
 <script>
     window.onload = function () {

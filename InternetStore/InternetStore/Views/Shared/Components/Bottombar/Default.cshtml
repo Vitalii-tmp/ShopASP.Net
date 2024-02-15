@@ -4,13 +4,52 @@
 
 @if (Model?.Any() == true)
 {
-    <div class="row g-0">
-        @if (Model.Any())
-        {
-
+    @if (Model.Count() > 3)
+    {
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                @for (int i = 0; i < Model.Count(); i += 3)
+                {
+                    <div class="carousel-item @(i == 0 ? "active" : "")">
+                        <div class="row g-0">
+                            @foreach (ProductItem entity in Model.Skip(i).Take(3))
+                            {
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="product-card">
+                                        <div class="product-card-img">
+                                            <a asp-area="" asp-controller="Products" asp-action="Index" asp-route-id="@entity.Id">
+                                                <img src="~/img/@entity.TitleImagePath" alt="" class="left" />
+                                            </a>
+                                        </div>
+                                        <div class="product-card-content">
+                                            <h3><a asp-area="" asp-controller="Products" asp-action="Index" asp-route-id="@entity.Id">@entity.Title</a></h3>
+                                            <div class="product-card-details d-flex justify-content-between">
+                                                <span>@entity.Price</span>
+                                                <span>В наявності</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                }
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    }
+    else
+    {
+        <div class="row g-0">
             @foreach (ProductItem entity in Model)
             {
-
                 <div class="col-lg-4 col-md-6">
                     <div class="product-card">
                         <div class="product-card-img">
@@ -21,21 +60,13 @@
                         <div class="product-card-content">
                             <h3><a asp-area="" asp-controller="Products" asp-action="Index" asp-route-id="@entity.Id">@entity.Title</a></h3>
                             <div class="product-card-details d-flex justify-content-between">
-
                                 <span>@entity.SubTitle</span>
-
-
                                 <span>В наявності</span>
-
                             </div>
                         </div>
                     </div>
-
                 </div>
-
-
-
             }
-        }
-    </div>
+        </div>
+    }
 }

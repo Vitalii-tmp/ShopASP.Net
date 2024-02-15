@@ -1,0 +1,43 @@
+﻿
+.admin-home-page{
+    min-height: 80vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.admin-panel-title{
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 1.44;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.admin-panel-pages{
+margin-top: 30px;
+}
+
+
+.admin-panel-exit{
+    margin-top: 30px;    
+}
+
+.admin-panel-exit .btn{
+
+padding: 12px 60px;
+        font-size: 15px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        margin-right: 20px;
+}
+
+.admin-add-product {
+    margin-bottom: 20px;
+}
+
+.admin-save-btn{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #00C084;
+    border-color: #00C084;
+}

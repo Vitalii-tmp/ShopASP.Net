@@ -4,45 +4,64 @@
     ViewBag.Title = strTitle;
 }
 
-<div>
-<div>
-    <h2>@strTitle</h2>
-    <div>
+<div class="admin-home-page container">
+
+    <h2 class="admin-panel-title">@strTitle</h2>
+    <div class="admin-panel-products">
         <h3>Наші продукти</h3>
-        <div class="div-box">
+        <div class="div-box admin-add-product">
             <a asp-area="Admin" asp-controller="ProductItems" asp-action="Edit" asp-route-id="">Додати продукт</a>
         </div>
         @if (Model.Any())
         {
-            <div>
+            <div class="list-group">
+
                 @foreach (ProductItem entity in Model)
                 {
-                    <div>
-                        <a asp-area="Admin" asp-controller="ProductItems" asp-action="Edit" asp-route-id="@entity.Id">Редагувати</a>
-                        |
-                        <form style="display: inline-block;" id="form-@entity.Id" asp-area="Admin" asp-controller="ProductItems" asp-action="Delete" method="post">
-                            <input type="hidden" name="id" value="@entity.Id">
-                            <a href="#" onclick="document.getElementById('form-@entity.Id').submit();">видалити</a>
-                        </form>
-                        |
-                        <a asp-area="" asp-controller="Products" asp-action="Index" asp-route-id="@entity.Id">
-                            @($"{entity.Title}")
-                        </a>
+                    <div class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="text-center">
+                                <a class="btn btn-info" asp-area="Admin" asp-controller="ProductItems" asp-action="Edit" asp-route-id="@entity.Id">Редагувати</a>
+                            </div>
+                            <div class="text-center">
+                                <a class="btn btn-danger" asp-area="Admin" asp-controller="ProductItems" asp-action="Delete" asp-route-id="@entity.Id">Видалити</a>
+                            </div>
+                            <div class="text-center">
+                                <a class="btn btn-secondary" asp-area="" asp-controller="Products" asp-action="Index" asp-route-id="@entity.Id">@entity.Title</a>
+                            </div>
+                        </div>
                     </div>
                 }
             </div>
         }
+
+
+
     </div>
+
+
+
+    <div class="admin-panel-pages">
         <h3>Редагувати сторінки сайту</h3>
-        <a asp-area="Admin" asp-controller="TextFields" asp-action="Edit" asp-route-codeWord="HomePage">Головна</a>
-        <a asp-area="Admin" asp-controller="TextFields" asp-action="Edit" asp-route-codeWord="CatalogPage">Каталог</a>
-        <a asp-area="Admin" asp-controller="TextFields" asp-action="Edit" asp-route-codeWord="ContactsPage">Контакти</a>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <a class="nav-link" href="@Url.Action("Edit", "TextFields", new { area = "Admin", codeWord = "HomePage" })">Головна</a>
+            </li>
+            <li class="list-group-item">
+                <a class="nav-link" href="@Url.Action("Edit", "TextFields", new { area = "Admin", codeWord = "CatalogPage" })">Каталог</a>
+            </li>
+            <li class="list-group-item">
+                <a class="nav-link" href="@Url.Action("Edit", "TextFields", new { area = "Admin", codeWord = "ContactsPage" })">Контакти</a>
+            </li>
+        </ul>
     </div>
-    <div class="div-box">
+
+
+    <div class="admin-panel-exit">
         <form asp-area="" asp-controller="Account" asp-action="Logout" method="post">
-            <input type="submit" value="Вийти" />
+            <button type="submit" class="btn btn-danger btn-sm">Вийти</button>
         </form>
     </div>
+
+
 </div>
-
-

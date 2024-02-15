@@ -275,6 +275,7 @@ a {
     padding: 30px;
     margin: 0px;
     border: var(--bg-color) 2px solid ;
+    
 }
 
 .product-card:hover {

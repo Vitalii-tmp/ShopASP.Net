@@ -5,101 +5,100 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
-build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = InternetStore
 build_property.RootNamespace = InternetStore
-build_property.ProjectDir = C:\Users\vital\Study_2023\TeamVebDev\ShopASP.Net\InternetStore\InternetStore\
+build_property.ProjectDir = /home/ShopASP.Net/InternetStore/InternetStore/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\vital\Study_2023\TeamVebDev\ShopASP.Net\InternetStore\InternetStore
+build_property.MSBuildProjectDirectory = /home/ShopASP.Net/InternetStore/InternetStore
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/vital/Study_2023/TeamVebDev/ShopASP.Net/InternetStore/InternetStore/Areas/Admin/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[/home/ShopASP.Net/InternetStore/InternetStore/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/Study_2023/TeamVebDev/ShopASP.Net/InternetStore/InternetStore/Areas/Admin/Views/ProductItems/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdEl0ZW1zXEVkaXQuY3NodG1s
+[/home/ShopASP.Net/InternetStore/InternetStore/Areas/Admin/Views/ProductItems/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUHJvZHVjdEl0ZW1zL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/Study_2023/TeamVebDev/ShopASP.Net/InternetStore/InternetStore/Areas/Admin/Views/TextFields/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGV4dEZpZWxkc1xFZGl0LmNzaHRtbA==
+[/home/ShopASP.Net/InternetStore/InternetStore/Areas/Admin/Views/TextFields/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvVGV4dEZpZWxkcy9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/Study_2023/TeamVebDev/ShopASP.Net/InternetStore/InternetStore/Areas/Admin/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/home/ShopASP.Net/InternetStore/InternetStore/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/Study_2023/TeamVebDev/ShopASP.Net/InternetStore/InternetStore/Areas/Admin/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[/home/ShopASP.Net/InternetStore/InternetStore/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/Study_2023/TeamVebDev/ShopASP.Net/InternetStore/InternetStore/Views/Catalog/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0YWxvZ1xJbmRleC5jc2h0bWw=
+[/home/ShopASP.Net/InternetStore/InternetStore/Views/Catalog/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0YWxvZy9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/Study_2023/TeamVebDev/ShopASP.Net/InternetStore/InternetStore/Views/Home/Catalog.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXRhbG9nLmNzaHRtbA==
+[/home/ShopASP.Net/InternetStore/InternetStore/Views/Home/Catalog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9DYXRhbG9nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/Study_2023/TeamVebDev/ShopASP.Net/InternetStore/InternetStore/Views/Home/Contacts.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0cy5jc2h0bWw=
+[/home/ShopASP.Net/InternetStore/InternetStore/Views/Home/Contacts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Db250YWN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/Study_2023/TeamVebDev/ShopASP.Net/InternetStore/InternetStore/Views/Home/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvci5jc2h0bWw=
+[/home/ShopASP.Net/InternetStore/InternetStore/Views/Home/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9FcnJvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/Study_2023/TeamVebDev/ShopASP.Net/InternetStore/InternetStore/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[/home/ShopASP.Net/InternetStore/InternetStore/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/Study_2023/TeamVebDev/ShopASP.Net/InternetStore/InternetStore/Views/Products/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
+[/home/ShopASP.Net/InternetStore/InternetStore/Views/Products/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdHMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/Study_2023/TeamVebDev/ShopASP.Net/InternetStore/InternetStore/Views/Products/ProductExample.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcUHJvZHVjdEV4YW1wbGUuY3NodG1s
+[/home/ShopASP.Net/InternetStore/InternetStore/Views/Products/ProductExample.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdHMvUHJvZHVjdEV4YW1wbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/Study_2023/TeamVebDev/ShopASP.Net/InternetStore/InternetStore/Views/Products/Show.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcU2hvdy5jc2h0bWw=
+[/home/ShopASP.Net/InternetStore/InternetStore/Views/Products/Show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdHMvU2hvdy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/Study_2023/TeamVebDev/ShopASP.Net/InternetStore/InternetStore/Views/Shared/Bottombar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEJvdHRvbWJhci5jc2h0bWw=
+[/home/ShopASP.Net/InternetStore/InternetStore/Views/Shared/Bottombar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0JvdHRvbWJhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/Study_2023/TeamVebDev/ShopASP.Net/InternetStore/InternetStore/Views/Shared/Components/Bottombar/Default.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQm90dG9tYmFyXERlZmF1bHQuY3NodG1s
+[/home/ShopASP.Net/InternetStore/InternetStore/Views/Shared/Components/Bottombar/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvQm90dG9tYmFyL0RlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/Study_2023/TeamVebDev/ShopASP.Net/InternetStore/InternetStore/Views/Shared/CssPatrial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENzc1BhdHJpYWwuY3NodG1s
+[/home/ShopASP.Net/InternetStore/InternetStore/Views/Shared/CssPatrial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Nzc1BhdHJpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/Study_2023/TeamVebDev/ShopASP.Net/InternetStore/InternetStore/Views/Shared/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExvZ2luLmNzaHRtbA==
+[/home/ShopASP.Net/InternetStore/InternetStore/Views/Shared/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0xvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/Study_2023/TeamVebDev/ShopASP.Net/InternetStore/InternetStore/Views/Shared/MetaTagsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE1ldGFUYWdzUGFydGlhbC5jc2h0bWw=
+[/home/ShopASP.Net/InternetStore/InternetStore/Views/Shared/MetaTagsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL01ldGFUYWdzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/Study_2023/TeamVebDev/ShopASP.Net/InternetStore/InternetStore/Views/Shared/ScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFNjcmlwdHNQYXJ0aWFsLmNzaHRtbA==
+[/home/ShopASP.Net/InternetStore/InternetStore/Views/Shared/ScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1NjcmlwdHNQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/Study_2023/TeamVebDev/ShopASP.Net/InternetStore/InternetStore/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+[/home/ShopASP.Net/InternetStore/InternetStore/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/Study_2023/TeamVebDev/ShopASP.Net/InternetStore/InternetStore/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/home/ShopASP.Net/InternetStore/InternetStore/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/Study_2023/TeamVebDev/ShopASP.Net/InternetStore/InternetStore/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[/home/ShopASP.Net/InternetStore/InternetStore/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

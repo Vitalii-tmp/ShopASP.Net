@@ -14,23 +14,22 @@
         </div>
         @if (Model.Any())
         {
-            <div class="list-group">
+            <div >
 
                 @foreach (ProductItem entity in Model)
                 {
-                    <div class="list-group-item">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="text-center">
-                                <a class="btn btn-info" asp-area="Admin" asp-controller="ProductItems" asp-action="Edit" asp-route-id="@entity.Id">Редагувати</a>
-                            </div>
-                            <div class="text-center">
-                                <a class="btn btn-danger" asp-area="Admin" asp-controller="ProductItems" asp-action="Delete" asp-route-id="@entity.Id">Видалити</a>
-                            </div>
-                            <div class="text-center">
-                                <a class="btn btn-secondary" asp-area="" asp-controller="Products" asp-action="Index" asp-route-id="@entity.Id">@entity.Title</a>
-                            </div>
-                        </div>
-                    </div>
+                    <div>
+    <a asp-area="Admin" asp-controller="ProductItems" asp-action="Edit" asp-route-id="@entity.Id">Редагувати</a>
+    |
+    <form style="display: inline-block;" id="form-@entity.Id" asp-area="Admin" asp-controller="ProductItems" asp-action="Delete" method="post">
+        <input type="hidden" name="id" value="@entity.Id">
+        <a href="#" onclick="document.getElementById('form-@entity.Id').submit();">Видалити</a>
+    </form>
+    |
+    <a asp-area="" asp-controller="Products" asp-action="Index" asp-route-id="@entity.Id">
+        @($"{entity.Title}")
+    </a>
+</div>
                 }
             </div>
         }
